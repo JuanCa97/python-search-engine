@@ -18,7 +18,38 @@ class encontrar(object):
                 self.web=raw_input("Insert the first page: ")
                 self.we =raw_input("Insert the second page: ")
                 self.pa =raw_input("Enter what you want: ")
-                
+                cleaner()
+                print"Searching ═►"
+                time.sleep(0.55)
+                cleaner()
+                print"Searching ══►"
+                time.sleep(0.55)
+                cleaner()
+                print"Searching ═══►"
+                time.sleep(0.55)
+                cleaner()
+                print"Searching ════►"
+                time.sleep(0.55)
+                cleaner()
+                print"Searching ═════►"
+                time.sleep(0.55)
+                cleaner()
+                print"Searching ══════►"
+                time.sleep(0.55)
+                cleaner()
+                print"Searching ═══════►"
+                time.sleep(0.55)
+                cleaner()
+                print"Searching ════════►"
+                time.sleep(0.55)
+                cleaner()
+                print"Searching ═════════►"
+                time.sleep(0.55)
+                cleaner()
+                print"Searching ══════════►"
+                time.sleep(0.55)
+                cleaner()
+                print"please wait..."
                 https = ""
                 req = urllib.urlopen(https + self.web)
                 r = urllib.urlopen(https + self.we)
@@ -26,7 +57,7 @@ class encontrar(object):
                 bb = r.read()
                 p = len(re.findall(self.pa,b))
                 p1 = len(re.findall(self.pa,bb))
-            
+            	cleaner()
                 if p > p1:
                     print "The recommended site is: ",self.web
                     print "Number of words found: ", p
